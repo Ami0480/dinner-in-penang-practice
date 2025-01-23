@@ -1,0 +1,65 @@
+body {
+  font-family: "Pangolin", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+}
+
+.sub-h1 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.search {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.search-form {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 50px;
+  border: 1px solid #ff453f;
+  font-size: 16px;
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 30px;
+  margin-left: 20px;
+  background-color: #ff453f;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.restaurant {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: white;
+  border-left: 3px solid #ff453f;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+  color: #ff453f;
+}
