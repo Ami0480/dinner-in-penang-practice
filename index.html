@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Dinner in Penang</title>
   </head>
   <body>
@@ -20,19 +21,22 @@
           I can decide your dinner 🍜
           <span class="sub-h1">only in Penang</span>
         </h1>
-
-        <form class="search">
-          <input
-            type="text"
-            placeholder="What do you feel like tonight?"
-            autofocus
-            required
-            autocomplete="off"
-            class="search-form"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="restaurant">This will be here<br />This wiol be here</div>
+        <div class="form-container">
+          <form class="search" id="search">
+            <input
+              type="text"
+              placeholder="What do you feel like tonight?"
+              autofocus
+              required
+              autocomplete="off"
+              class="search-form"
+              id="search-form-user"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e : Japanese, Vegetarian, Hawker</div>
+        </div>
+        <div class="restaurant strong hidden" id="restaurant"></div>
 
         <footer>
           This is coded by

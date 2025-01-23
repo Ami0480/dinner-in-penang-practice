@@ -20,11 +20,18 @@ h1 {
   font-size: 18px;
 }
 
-.search {
-  display: flex;
+.form-container {
   background-color: white;
   padding: 20px;
   margin: 20px auto;
+  border-radius: 5px;
+}
+
+.search {
+  display: flex;
+  background-color: white;
+  padding: 0;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
@@ -35,6 +42,12 @@ h1 {
   border: 1px solid #ff453f;
   font-size: 16px;
   outline: none;
+}
+
+.hint {
+  font-size: 13px;
+  opacity: 0.5;
+  margin-top: 5px;
 }
 
 .submit-button {
@@ -52,6 +65,17 @@ h1 {
   margin: 20px auto;
   background-color: white;
   border-left: 3px solid #ff453f;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.restaurant strong {
+  color: RGB(255, 0, 0);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
@@ -62,4 +86,19 @@ footer {
 
 a {
   color: #ff453f;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
